@@ -59,5 +59,16 @@ names(datawithLabels) <- tolower(names(datawithLabels)) #First let's change all 
 colnames(datawithLabels)[1] <- "activities" #rename first column
 colnames(datawithLabels)[2] <- "subjects" #rename second column
 
+#Let's remove all situations where there are too many dots
 
-head(datawithLabels)
+colnames(datawithLabels) <- gsub("mean...", "mean.",colnames(datawithLabels)) 
+colnames(datawithLabels) <- gsub("mean.q...", "mean.q.",colnames(datawithLabels))
+colnames(datawithLabels) <- gsub("std...", "std.",colnames(datawithLabels))
+
+#let's now take only the gravity and body acceleration across the 3 axis
+
+selectedData <- subset(datawithLabels, select = c(1:8))
+
+#Now we need to calculate the averages 
+
+head(selectedData)
