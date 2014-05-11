@@ -152,12 +152,14 @@ colnames(finalUpstairs) = "activities"
 
 finalActivities <- rbind(finalLaying,finalSitting,finalStanding,finalWalking,finalDonwstairs,finalUpstairs)
 
-
+#Create the colmn for subject nmbers 
 finalSubjects <- as.data.frame(paste("subject", 1:30, sep = "."))
 subjectAll <- rbind(finalSubjects, finalSubjects, finalSubjects, finalSubjects, finalSubjects, finalSubjects)
 colnames(subjectAll) <- "subject.number"
 
+#Get the final dataset together
 finalDataset <- data.frame(finalActivities, subjectAll, dataAverages)
 
+#Export the data in a CSV file
 write.table(finalDataset, file="cleanaveragescoursera.csv", sep = ",", row.names=FALSE)
 
