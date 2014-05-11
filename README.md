@@ -35,7 +35,7 @@ These are the steps followed by the script
 * Variables desired are separated using subset()
 * Columns are sorted to facilitate calculating the averages. order() is used for this
 * A for loop is used to calculate the averages for each subject across each of the different activities
-
+* Data is exported to a txt file using write.table()
 
 
 ###License
