@@ -1,7 +1,7 @@
 ##Getting and Cleaning Data coursera MOOC
 
 
-#Final Assignment
+###Final Assignment
 
 This repo is intending to look at some transformations I am going to be doing to a dataset in order to demonstrate my abilities to get and clean data for further analysis.
 
@@ -11,11 +11,12 @@ This repo contains the following files
 * CodeBook.md - describing the dataset, variables and transformations done to the data
 * run_analysis.R - Script that does all the transformations described on CodeBook.md
 
+Variables chosen were:
 
 
 
 
-#License
+###License
 
 
 This is an assignment for on online course. Please use the code here to learn but do not copy it to submit your own assignment as it ail violate the honour code at Coursera. 
