@@ -161,5 +161,5 @@ colnames(subjectAll) <- "subject.number"
 finalDataset <- data.frame(finalActivities, subjectAll, dataAverages)
 
 #Export the data in a CSV file
-write.table(finalDataset, file="cleanaveragescoursera.csv", sep = ",", row.names=FALSE)
 
+write.table(finalDataset, file="cleanaveragescoursera.txt", sep = " ", row.names=FALSE)
