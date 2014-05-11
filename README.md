@@ -20,6 +20,8 @@ Please remember to keep your data in the same folders structure that the structu
 * All training data inside a folder clued "train"
 * Other data in the root folder (e.g. features.txt)
 
+For easiness of work, all the work has been included in only one script. In this way you will not need to work across more than one script 
+
 
 ###What does the script do? 
 
@@ -36,6 +38,15 @@ These are the steps followed by the script
 * Columns are sorted to facilitate calculating the averages. order() is used for this
 * A for loop is used to calculate the averages for each subject across each of the different activities
 * Data is exported to a txt file using write.table()
+
+###Files Included
+
+This repo includes the following files
+
+* README.md
+* CodeBook.md = It contains the description of the different variables used and explanations behind it selection
+* run_analysis.R = It contains the script to transform the initial data into the small tidy dataset with the averages of the variables selected for each subject and for each activity
+
 
 
 ###License

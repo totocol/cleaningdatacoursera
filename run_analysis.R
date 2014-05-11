@@ -115,7 +115,7 @@ for (i in seq_along(1:30)) {
 }
 
 colnames(dataAverages) <- c("tbodyacc.mean.x", "tbodyacc.mean.y", 
-                            "tbodyacc.mean.x","tgravityacc.mean.x",
+                            "tbodyacc.mean.z","tgravityacc.mean.x",
                             "tgravityacc.mean.y","tgravityacc.mean.z")
 
 #For walking downstairs
