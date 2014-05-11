@@ -160,6 +160,6 @@ colnames(subjectAll) <- "subject.number"
 #Get the final dataset together
 finalDataset <- data.frame(finalActivities, subjectAll, dataAverages)
 
-#Export the data in a CSV file
+#Export the data in a txt file
 
 write.table(finalDataset, file="cleanaveragescoursera.txt", sep = " ", row.names=FALSE)

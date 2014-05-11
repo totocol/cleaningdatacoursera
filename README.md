@@ -11,8 +11,30 @@ This repo contains the following files
 * CodeBook.md - describing the dataset, variables and transformations done to the data
 * run_analysis.R - Script that does all the transformations described on CodeBook.md
 
-Variables chosen were:
 
+###Instructions for script to work well
+
+Please remember to keep your data in the same folders structure that the structure provided:
+
+* All test data inside a folder called "test"
+* All training data inside a folder clued "train"
+* Other data in the root folder (e.g. features.txt)
+
+
+###What does the script do? 
+
+These are the steps followed by the script
+
+* First the data needed is read using the read.table() function
+* Test data and training data are then joined using the rbind() function
+* Labels are then added using colnames() function
+* Columns with StdDev and Mean are taken out using grepl()
+* Column with the different subjects is also added
+* Meaningful names are given to the activities using regular expressions
+* Column names with the variables are cleaned up using gsub()
+* Variables desired are separated using subset()
+* Columns are sorted to facilitate calculating the averages. order() is used for this
+* A for loop is used to calculate the averages for each subject across each of the different activities
 
 
 
