@@ -26,18 +26,14 @@ This variables that contain 6 measurements were considered as the most important
 
 ###Final file
 
-The final tidy data contains the following columns:
+The final tidy data contains the following 8 columns:
 
 * activities = it shows which of the 6 activities was being carried out (laying, sitting, standing, walking, walking.downstairs, walking.upstairs)  
 * subject.number = Shows which subject the measurement refers to from 1 to 30 
 * tbodyacc.mean.x = Mean of the body acceleration signal across the x axis for each subject across all 6 activities
 * tbodyacc.mean.y = Mean of the body acceleration signal across the y axis for each subject across all 6 activities
-* tbodyacc.mean.z =  Mean of the body acceleration signal across the z axis for each subject across all 6 activities"tgravityacc.mean.x" "tgravityacc.mean.y" "tgravityacc.mean.z"
+* tbodyacc.mean.z =  Mean of the body acceleration signal across the z axis for each subject across all 6 activities
+* tgravityacc.mean.x = Mean of the gravity acceleration signal across the x axis for each subject across all 6 activities
+* tgravityacc.mean.y = Mean of the gravity acceleration signal across the y axis for each subject across all 6 activities
+* tgravityacc.mean.z = Mean of the gravity acceleration signal across the z axis for each subject across all 6 activities
 
-
-1 WALKING
-2 WALKING_UPSTAIRS
-3 WALKING_DOWNSTAIRS
-4 SITTING
-5 STANDING
-6 LAYING
